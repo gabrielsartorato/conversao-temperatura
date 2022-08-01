@@ -2,11 +2,11 @@ FROM node:14-alpine
 
 WORKDIR /usr/src/conversao-temperatura
 
-COPY ./src/package*.json .
+COPY ./package*.json .
 
 RUN yarn
 
-COPY ./src/ .
+COPY ./ .
 
 EXPOSE 8080
 
